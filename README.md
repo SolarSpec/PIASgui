@@ -124,10 +124,11 @@ _For more information on data filtering and decimation, please refer to the [Doc
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [X] Plot Kinetics as Lin-Lin
+    - [ ] Bring over Log-Y functionality
+- [X] Select time slices for Spectra
+- [ ] Generate normalized kinetics
+- [ ] Filter and decimate either/or kinetics
 
 See the [open issues](https://github.com/dudeImpossible42/PIASgui/issues) for a full list of proposed features (and known issues).
 
@@ -165,7 +166,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-SolarSpec - [@page_handle](https://solarspec.ok.ubc.ca/) - vidihari@student.ubc.ca
+SolarSpec - [SolarSpec Website](https://solarspec.ok.ubc.ca/) - vidihari@student.ubc.ca
 
 Project Link: [https://github.com/dudeImpossible42/PIASgui](https://github.com/dudeImpossible42/PIASgui)
 
@@ -176,9 +177,9 @@ Project Link: [https://github.com/dudeImpossible42/PIASgui](https://github.com/d
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+* [Group Leader - Dr. Robert Godin](https://solarspec.ok.ubc.ca/people/)
+* [Group Alumni - James Kivai](https://solarspec.ok.ubc.ca/people/)
+* [The Entire SolarSpec Team](https://solarspec.ok.ubc.ca/people/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

@@ -196,7 +196,7 @@ Project Link: [https://github.com/dudeImpossible42/PIASgui](https://github.com/d
 [issues-shield]: https://img.shields.io/github/issues/dudeImpossible42/PIASgui.svg?style=for-the-badge
 [issues-url]: https://github.com/dudeImpossible42/PIASgui/issues
 [license-shield]: https://img.shields.io/github/license/dudeImpossible42/PIASgui.svg?style=for-the-badge
-[license-url]: https://github.com/dudeImpossible42/PIASgui/blob/master/LICENSE.txt
+[license-url]: https://github.com/dudeImpossible42/PIASgui/blob/main/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/haris-vidimlic-06730019b/
 [product-screenshot]: images/Screenshot.png

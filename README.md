@@ -127,8 +127,8 @@ _For more information on data filtering and decimation, please refer to the [Doc
 - [X] Plot Kinetics as Lin-Lin
     - [ ] Bring over Log-Y functionality
 - [X] Select time slices for Spectra
-- [ ] Generate normalized kinetics
-- [ ] Filter and decimate either/or kinetics
+- [X] Generate normalized kinetics
+- [X] Filter and decimate either/or kinetics
 
 See the [open issues](https://github.com/dudeImpossible42/PIASgui/issues) for a full list of proposed features (and known issues).
 

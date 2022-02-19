@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="2803967592" file="C:\Users\hvidi\Desktop\PIAS Repo\PIASpectra.prj" location="C:\Users\hvidi\Desktop\PIAS Repo" name="PIASpectra" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="3834621366" file="C:\Users\hvidi\Desktop\PIAS Repo\PIASpectra.prj" location="C:\Users\hvidi\Desktop\PIAS Repo" name="PIASpectra" target="target.mlapps" target-name="Package App">
     <param.appname>PIASpectra</param.appname>
     <param.authnamewatermark>Haris Vidimlic, Robert Godin</param.authnamewatermark>
     <param.email>vidihari@student.ubc.ca</param.email>
@@ -8,7 +8,7 @@
     <param.icons />
     <param.summary>A similar GUI to the Spectrabuilder application, with focus on viewing filtered and normalized Photoinduced Absorption Spectroscopy (PIAS)</param.summary>
     <param.description />
-    <param.screenshot>C:\Users\hvidi\AppData\Local\Temp\tpb6f0f221_bf54_40c9_972d_11fcf8e0a26b.png</param.screenshot>
+    <param.screenshot>C:\Users\hvidi\AppData\Local\Temp\tp58e03cd0_6ac4_493b_8e61_6a37bd096c43.png</param.screenshot>
     <param.version>2.0</param.version>
     <param.products.name>
       <item>MATLAB</item>
@@ -33,7 +33,7 @@
       <file>${PROJECT_ROOT}\PIASpectra.mlapp</file>
     </fileset.main>
     <fileset.depfun>
-      <file>C:\Users\hvidi\Desktop\DLSmultiAverage\images\logo.png</file>
+      <file>C:\Users\hvidi\Desktop\OnePanelRepo\images\logo.png</file>
       <file>${PROJECT_ROOT}\MATLAB data scripts\lin2log_TAS.m</file>
       <file>${PROJECT_ROOT}\MATLAB data scripts\PIASloadTDMSfolder.m</file>
       <file>${PROJECT_ROOT}\Matlab TDMS reader\TDMS_readTDMSFile.m</file>

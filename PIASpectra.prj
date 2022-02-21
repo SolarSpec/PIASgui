@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="2285471392" file="C:\Users\hvidi\Desktop\PIAS Repo\PIASpectra.prj" location="C:\Users\hvidi\Desktop\PIAS Repo" name="PIASpectra" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="3763424425" file="C:\Users\hvidi\Desktop\PIAS Repo\PIASpectra.prj" location="C:\Users\hvidi\Desktop\PIAS Repo" name="PIASpectra" target="target.mlapps" target-name="Package App">
     <param.appname>PIASpectra</param.appname>
     <param.authnamewatermark>Haris Vidimlic, Robert Godin</param.authnamewatermark>
     <param.email>vidihari@student.ubc.ca</param.email>
@@ -8,7 +8,7 @@
     <param.icons />
     <param.summary>A similar GUI to the Spectrabuilder application, with focus on viewing filtered and normalized Photoinduced Absorption Spectroscopy (PIAS)</param.summary>
     <param.description />
-    <param.screenshot>${PROJECT_ROOT}\images\Screenshot.png</param.screenshot>
+    <param.screenshot>C:\Users\hvidi\AppData\Local\Temp\tpeaaccd03_32b9_4a52_bfc8_95b48d4af81d.png</param.screenshot>
     <param.version>2.0</param.version>
     <param.products.name>
       <item>MATLAB</item>

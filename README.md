@@ -117,28 +117,36 @@ Click on the "Add-Ons" dropdown menu of your MATLAB Home screen. Then click on "
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-This app is currently lacking in any examples to be shown as it is still being created
+Here is a simple example of the app used on a small dataset. The filtering is turned on and we'd like to export all the kinetics data by clicking the "Export CSV Data" button. We can view where the file was saved in the text on the left panel and can then open the CSV file to view the data.
+
+_Please note that the bottom of each CSV contains an extra row of information attributed to the BackgroundLevel data of each TDMS file. This is simply a convention to carry this data if it is loaded back into the PIAS app. If one does not intend to load it back into the app, you may delete this row or store the variables somewhere else in the CSV as to not lose it for future use._
+  <figure>
+    <img src="PIASpectra_resources/ExportButton.png" alt="Export">
+  </figure>
+  <figure>
+    <img src="PIASpectra_resources/TopCSV.png" alt="Top" width="385" height="679" style="float:left">
+  </figure>
+  <figure>
+    <img src="PIASpectra_resources/BottomCSV.png" alt="Bottom" width="385" height="679">
+  </figure>
 
 _For more information on data filtering and decimation, please refer to the [Documentation](https://www.mathworks.com/help/signal/ref/decimate.html#d123e21788)_
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
 <!-- ROADMAP -->
 ## Roadmap
 
-- [X] Plot Kinetics as Lin-Lin
+- [X] Plot kinetics as Lin-Lin
     - [ ] Bring over Log-Y functionality
-- [X] Select time slices for Spectra
+- [X] Select time slices for spectra
 - [X] Generate normalized kinetics
 - [X] Filter and decimate either/or kinetics
+- [X] Select which normalized plots to view
 
 See the [open issues](https://github.com/dudeImpossible42/PIASgui/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -156,16 +164,12 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
 <!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- CONTACT -->
 ## Contact
@@ -176,8 +180,6 @@ Project Link: [https://github.com/dudeImpossible42/PIASgui](https://github.com/d
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
@@ -186,8 +188,6 @@ Project Link: [https://github.com/dudeImpossible42/PIASgui](https://github.com/d
 * [The Entire SolarSpec Team](https://solarspec.ok.ubc.ca/people/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->

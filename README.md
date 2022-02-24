@@ -77,6 +77,8 @@ A similar GUI to the Spectrabuilder application, with focus on viewing filtered 
 
 * [MATLAB](https://www.mathworks.com/products/matlab.html)
 * [TDMS Reader Addon](https://www.mathworks.com/matlabcentral/fileexchange/30023-tdms-reader)
+* [Image Processing Toolbox](https://www.mathworks.com/help/images/)
+* [Signal Processing Toolbox](https://www.mathworks.com/help/signal/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -89,7 +91,9 @@ To begin using this app is very simple. Just verify you have the necessary prequ
 
 ### Prerequisites
 
-Make sure MATLAB is installed. It is available for download in the Software Distribution section under the Help tab after you log into Canvas. [https://canvas.ubc.ca/](https://canvas.ubc.ca/)
+Make sure MATLAB is installed. It is available for download in the Software Distribution section under the Help tab after you log into [Canvas.](https://canvas.ubc.ca/)
+Click on the "Add-Ons" dropdown menu of your MATLAB Home screen. Then click on "Manage Add-Ons" and ensure you have the Image Processing Toolbox and the Signal Processing Toolbox. If not, click on "Get Add-Ons" button instead and search for the aforementioned products.
+
 
 ### Installation
 

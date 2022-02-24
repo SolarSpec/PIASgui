@@ -120,15 +120,14 @@ Click on the "Add-Ons" dropdown menu of your MATLAB Home screen. Then click on "
 Here is a simple example of the app used on a small dataset. The filtering is turned on and we'd like to export all the kinetics data by clicking the "Export CSV Data" button. We can view where the file was saved in the text on the left panel and can then open the CSV file to view the data.
 
 _Please note that the bottom of each CSV contains an extra row of information attributed to the BackgroundLevel data of each TDMS file. This is simply a convention to carry this data if it is loaded back into the PIAS app. If one does not intend to load it back into the app, you may delete this row or store the variables somewhere else in the CSV as to not lose it for future use._
-  <figure>
+
+  <div class="row">
     <img src="PIASpectra_resources/ExportButton.png" alt="Export">
-  </figure>
-  <figure>
-    <img src="PIASpectra_resources/TopCSV.png" alt="Top" width="385" height="679" style="float:left">
-  </figure>
-  <figure>
-    <img src="PIASpectra_resources/BottomCSV.png" alt="Bottom" width="385" height="679">
-  </figure>
+  </div>
+  <div class="row" style="float:left">
+    <img src="PIASpectra_resources/TopCSV.png" alt="Top" style="width:50%;height:50%;padding: 5px"><img src="PIASpectra_resources/BottomCSV.png" alt="Bottom" style="width:50%;height:50%;padding: 5px">
+  </div>
+
 
 _For more information on data filtering and decimation, please refer to the [Documentation](https://www.mathworks.com/help/signal/ref/decimate.html#d123e21788)_
 

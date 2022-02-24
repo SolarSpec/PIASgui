@@ -1,14 +1,18 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="975687419" file="C:\Users\hvidi\Desktop\PIAS Repo\PIASpectra.prj" location="C:\Users\hvidi\Desktop\PIAS Repo" name="PIASpectra" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="1889556730" file="C:\Users\hvidi\Desktop\PIAS Repo\PIASpectra.prj" location="C:\Users\hvidi\Desktop\PIAS Repo" name="PIASpectra" target="target.mlapps" target-name="Package App">
     <param.appname>PIASpectra</param.appname>
     <param.authnamewatermark>Haris Vidimlic, Robert Godin</param.authnamewatermark>
     <param.email>vidihari@student.ubc.ca</param.email>
     <param.company>SolarSpec</param.company>
-    <param.icon />
-    <param.icons />
+    <param.icon>${PROJECT_ROOT}\PIASpectra_resources\icon_24.png</param.icon>
+    <param.icons>
+      <file>${PROJECT_ROOT}\PIASpectra_resources\icon_48.png</file>
+      <file>${PROJECT_ROOT}\PIASpectra_resources\icon_24.png</file>
+      <file>${PROJECT_ROOT}\PIASpectra_resources\icon_16.png</file>
+    </param.icons>
     <param.summary>A similar GUI to the Spectrabuilder application, with focus on viewing filtered and normalized Photoinduced Absorption Spectroscopy (PIAS)</param.summary>
     <param.description />
-    <param.screenshot>C:\Users\hvidi\AppData\Local\Temp\tp8f80498d_2d69_4f0e_8f91_902974f8ed1a.png</param.screenshot>
+    <param.screenshot>C:\Users\hvidi\AppData\Local\Temp\tpb1b04b30_38f8_42fc_9f82_be2a0a2164a9.png</param.screenshot>
     <param.version>2.0</param.version>
     <param.products.name>
       <item>MATLAB</item>
@@ -29,8 +33,6 @@
     <param.output>${PROJECT_ROOT}</param.output>
     <param.guid>0e077cda-a867-4eb8-8ea4-494511c597dd</param.guid>
     <unset>
-      <param.icon />
-      <param.icons />
       <param.description />
       <param.platforms />
       <param.output />
@@ -39,7 +41,7 @@
       <file>${PROJECT_ROOT}\PIASpectra.mlapp</file>
     </fileset.main>
     <fileset.depfun>
-      <file>${PROJECT_ROOT}\images\logo.png</file>
+      <file>C:\Users\hvidi\Desktop\DLSmultiAverage\images\logo.png</file>
       <file>${PROJECT_ROOT}\MATLAB data scripts\lin2log_TAS.m</file>
       <file>${PROJECT_ROOT}\MATLAB data scripts\PIASloadTDMSfolder.m</file>
       <file>${PROJECT_ROOT}\Matlab TDMS reader\TDMS_readTDMSFile.m</file>

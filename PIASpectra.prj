@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="1090666555" file="C:\Users\hvidi\Desktop\PIAS Repo\PIASpectra.prj" location="C:\Users\hvidi\Desktop\PIAS Repo" name="PIASpectra" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="4025514426" file="C:\Users\hvidi\Desktop\PIAS Repo\PIASpectra.prj" location="C:\Users\hvidi\Desktop\PIAS Repo" name="PIASpectra" target="target.mlapps" target-name="Package App">
     <param.appname>PIASpectra</param.appname>
     <param.authnamewatermark>Haris Vidimlic, Robert Godin</param.authnamewatermark>
     <param.email>vidihari@student.ubc.ca</param.email>
@@ -12,7 +12,7 @@
     </param.icons>
     <param.summary>A similar GUI to the Spectrabuilder application, with focus on viewing filtered and normalized Photoinduced Absorption Spectroscopy (PIAS)</param.summary>
     <param.description />
-    <param.screenshot>C:\Users\hvidi\AppData\Local\Temp\tpf751da4f_485c_437d_b637_2396df08789c.png</param.screenshot>
+    <param.screenshot>C:\Users\hvidi\AppData\Local\Temp\tp4ed2fe3e_aabf_4481_a1ab_a1d777be2da2.png</param.screenshot>
     <param.version>2.0</param.version>
     <param.products.name>
       <item>MATLAB</item>
@@ -41,21 +41,21 @@
       <file>${PROJECT_ROOT}\PIASpectra.mlapp</file>
     </fileset.main>
     <fileset.depfun>
-      <file>${PROJECT_ROOT}\MATLAB data scripts\lin2log_TAS.m</file>
       <file>${PROJECT_ROOT}\MATLAB data scripts\PIASloadTDMSfolder.m</file>
-      <file>${PROJECT_ROOT}\Matlab TDMS reader\TDMS_readTDMSFile.m</file>
-      <file>${PROJECT_ROOT}\Matlab TDMS reader\tdmsSubfunctions\TDMS_getDataSize.m</file>
-      <file>${PROJECT_ROOT}\Matlab TDMS reader\tdmsSubfunctions\TDMS_getDataTypeName.m</file>
-      <file>${PROJECT_ROOT}\Matlab TDMS reader\tdmsSubfunctions\TDMS_getGroupChanNames.m</file>
-      <file>${PROJECT_ROOT}\Matlab TDMS reader\tdmsSubfunctions\TDMS_getPropValue.m</file>
-      <file>${PROJECT_ROOT}\Matlab TDMS reader\tdmsSubfunctions\TDMS_getTypeSeekSizes.m</file>
-      <file>${PROJECT_ROOT}\Matlab TDMS reader\tdmsSubfunctions\TDMS_handleGetDataOption.m</file>
-      <file>${PROJECT_ROOT}\Matlab TDMS reader\tdmsSubfunctions\TDMS_initData.m</file>
-      <file>${PROJECT_ROOT}\Matlab TDMS reader\tdmsSubfunctions\TDMS_preprocessFile.m</file>
-      <file>${PROJECT_ROOT}\Matlab TDMS reader\tdmsSubfunctions\TDMS_processLeadIn.m</file>
-      <file>${PROJECT_ROOT}\Matlab TDMS reader\tdmsSubfunctions\TDMS_readFileHelper_v1.m</file>
-      <file>${PROJECT_ROOT}\Matlab TDMS reader\tdmsSubfunctions\TDMS_readFileHelper_v2.m</file>
-      <file>${PROJECT_ROOT}\PIASpectra_resources\logo.png</file>
+      <file>C:\Users\hvidi\Desktop\SpectraBuilder\MATLAB data scripts\lin2log_TAS.m</file>
+      <file>C:\Users\hvidi\Desktop\SpectraBuilder\Matlab TDMS reader\TDMS_readTDMSFile.m</file>
+      <file>C:\Users\hvidi\Desktop\SpectraBuilder\Matlab TDMS reader\tdmsSubfunctions\TDMS_getDataSize.m</file>
+      <file>C:\Users\hvidi\Desktop\SpectraBuilder\Matlab TDMS reader\tdmsSubfunctions\TDMS_getDataTypeName.m</file>
+      <file>C:\Users\hvidi\Desktop\SpectraBuilder\Matlab TDMS reader\tdmsSubfunctions\TDMS_getGroupChanNames.m</file>
+      <file>C:\Users\hvidi\Desktop\SpectraBuilder\Matlab TDMS reader\tdmsSubfunctions\TDMS_getPropValue.m</file>
+      <file>C:\Users\hvidi\Desktop\SpectraBuilder\Matlab TDMS reader\tdmsSubfunctions\TDMS_getTypeSeekSizes.m</file>
+      <file>C:\Users\hvidi\Desktop\SpectraBuilder\Matlab TDMS reader\tdmsSubfunctions\TDMS_handleGetDataOption.m</file>
+      <file>C:\Users\hvidi\Desktop\SpectraBuilder\Matlab TDMS reader\tdmsSubfunctions\TDMS_initData.m</file>
+      <file>C:\Users\hvidi\Desktop\SpectraBuilder\Matlab TDMS reader\tdmsSubfunctions\TDMS_preprocessFile.m</file>
+      <file>C:\Users\hvidi\Desktop\SpectraBuilder\Matlab TDMS reader\tdmsSubfunctions\TDMS_processLeadIn.m</file>
+      <file>C:\Users\hvidi\Desktop\SpectraBuilder\Matlab TDMS reader\tdmsSubfunctions\TDMS_readFileHelper_v1.m</file>
+      <file>C:\Users\hvidi\Desktop\SpectraBuilder\Matlab TDMS reader\tdmsSubfunctions\TDMS_readFileHelper_v2.m</file>
+      <file>C:\Users\hvidi\Desktop\SpectraBuilder\SpectrabuilderGUI_resources\logo.png</file>
     </fileset.depfun>
     <fileset.resources />
     <fileset.package />

@@ -13,7 +13,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/dudeImpossible42/PIASgui">
+  <a href="https://github.com/SolarSpec/PIASgui">
     <img src="PIASpectra_resources/logo.png" alt="SolarSpec" width="160" height="120">
   </a>
 
@@ -22,14 +22,14 @@
   <p align="center">
     A Graphical User Interface 
     <br />
-    <a href="https://github.com/dudeImpossible42/PIASgui"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/SolarSpec/PIASgui"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/dudeImpossible42/PIASgui">View Demo</a>
+    <a href="https://github.com/SolarSpec/PIASgui">View Demo</a>
     ·
-    <a href="https://github.com/dudeImpossible42/PIASgui/issues">Report Bug</a>
+    <a href="https://github.com/SolarSpec/PIASgui/issues">Report Bug</a>
     ·
-    <a href="https://github.com/dudeImpossible42/PIASgui/issues">Request Feature</a>
+    <a href="https://github.com/SolarSpec/PIASgui/issues">Request Feature</a>
   </p>
 </div>
 
@@ -99,7 +99,7 @@ Click on the "Add-Ons" dropdown menu of your MATLAB Home screen. Then click on "
 
 1. Clone the repo to your PC
    ```sh
-   git clone https://github.com/dudeImpossible42/PIASgui.git
+   git clone https://github.com/SolarSpec/PIASgui.git
    ```
 2. Install the application 
    ```
@@ -143,7 +143,7 @@ _For more information on data filtering and decimation, please refer to the [Doc
 - [X] Filter and decimate either/or kinetics
 - [X] Select which normalized plots to view
 
-See the [open issues](https://github.com/dudeImpossible42/PIASgui/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/SolarSpec/PIASgui/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -166,7 +166,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the BSD 3-Clause License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -175,7 +175,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 SolarSpec - [SolarSpec Website](https://solarspec.ok.ubc.ca/) - vidihari@student.ubc.ca
 
-Project Link: [https://github.com/dudeImpossible42/PIASgui](https://github.com/dudeImpossible42/PIASgui)
+Project Link: [https://github.com/SolarSpec/PIASgui](https://github.com/SolarSpec/PIASgui)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -190,16 +190,16 @@ Project Link: [https://github.com/dudeImpossible42/PIASgui](https://github.com/d
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/dudeImpossible42/PIASgui.svg?style=for-the-badge
-[contributors-url]: https://github.com/dudeImpossible42/PIASgui/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/dudeImpossible42/PIASgui.svg?style=for-the-badge
-[forks-url]: https://github.com/dudeImpossible42/PIASgui/network/members
-[stars-shield]: https://img.shields.io/github/stars/dudeImpossible42/PIASgui.svg?style=for-the-badge
-[stars-url]: https://github.com/dudeImpossible42/PIASgui/stargazers
-[issues-shield]: https://img.shields.io/github/issues/dudeImpossible42/PIASgui.svg?style=for-the-badge
-[issues-url]: https://github.com/dudeImpossible42/PIASgui/issues
-[license-shield]: https://img.shields.io/github/license/dudeImpossible42/PIASgui.svg?style=for-the-badge
-[license-url]: https://github.com/dudeImpossible42/PIASgui/blob/main/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/SolarSpec/PIASgui.svg?style=for-the-badge
+[contributors-url]: https://github.com/SolarSpec/PIASgui/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/SolarSpec/PIASgui.svg?style=for-the-badge
+[forks-url]: https://github.com/SolarSpec/PIASgui/network/members
+[stars-shield]: https://img.shields.io/github/stars/SolarSpec/PIASgui.svg?style=for-the-badge
+[stars-url]: https://github.com/SolarSpec/PIASgui/stargazers
+[issues-shield]: https://img.shields.io/github/issues/SolarSpec/PIASgui.svg?style=for-the-badge
+[issues-url]: https://github.com/SolarSpec/PIASgui/issues
+[license-shield]: https://img.shields.io/github/license/SolarSpec/PIASgui.svg?style=for-the-badge
+[license-url]: https://github.com/SolarSpec/PIASgui/blob/main/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/haris-vidimlic-06730019b/
 [product-screenshot]: PIASpectra_resources/Screenshot.png

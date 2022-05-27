@@ -1,2 +1,0 @@
-Number of Averages	Time resolution	Scope vertical range (V)	Background level (V)	100% Reflection Reference Signal (V)	Output calculation Method
-32.000000	20000.000000	0.200000	0.010067	0.000000	0.000000

@@ -5,10 +5,10 @@ BackgroundLvl = table();
 count = 0;
 
 % Heirarchy of wanted channels
-chanFinal = ["final A-B","A-Test  dOD"]; %What about A-Test processed??
-chanRaw = ["B-Test  raw", "A-Test  raw"];
+chanFinal = ["final A-B";"A-Test  dOD"]; %What about A-Test processed??
+chanRaw = ["B-Test  raw"; "A-Test  raw"];
 
-mix = [chanRaw,chanFinal];
+mix = [chanRaw;chanFinal];
 
 % Loop and create tables for all TDMS files in the folder
 for FileIndex = 1:1:size(FolderContent,1)
@@ -16,24 +16,34 @@ for FileIndex = 1:1:size(FolderContent,1)
     % Make sure the script can accept TAS and PIAS
     if endsWith(FolderContent(FileIndex).name, 'nm.tdms') == 1
         count = count + 1;
+        tdmsFile = [FolderPath, '\', FolderContent(FileIndex).name];
 
         % Store which spectra we are looking at for each file
         Wavelength = extractBefore(FolderContent(FileIndex).name,'nm.tdms');
 
         % Show in command line which file we are extracting data from
-        display(['Now running: ',[FolderPath, '\', FolderContent(FileIndex).name]])
-        TDMScontent = TDMS_readTDMSFile([FolderPath, '\', FolderContent(FileIndex).name]);
+        display(['Now running: ',tdmsFile])
+%         TDMScontent = TDMS_readTDMSFile([FolderPath, '\', FolderContent(FileIndex).name]);
+
+        info = tdmsinfo(tdmsFile);
+        idx = strcmp(info.ChannelList{:,2},'CH0');
+        CH0GroupIndex = info.ChannelList{idx,1}(1);
+        ChannelIndices = info.ChannelList{idx,4};
+
+        TDMScontent = tdmsread(tdmsFile);%,ChannelGroupName=["Time";"CH0"]);
 
         % Find all useful data in CH0 - only look at A-B trace or just A trace
-        CH0GroupIndex = find(strcmp(TDMScontent.groupNames,'CH0')); % CH0 index is always 2??
-        ChannelIndices = TDMScontent.chanNames{1,CH0GroupIndex};
+%         CH0GroupIndex = find(strcmp(TDMScontent.groupNames,'CH0')); % CH0 index is always 2??
+%         ChannelIndices = TDMScontent.chanNames{1,CH0GroupIndex};
+
+%         ChannelIndices = TDMScontent.chanNames{1,2};
 
         if count == 1
             logical = contains(ChannelIndices,mix);
             options = ChannelIndices(logical);
 
             opts = options;
-            % opts{1,end+1} = 'Cancel';
+%             opts{1,end+1} = 'Cancel';
     
             name = uiconfirm(app.PIASpectraUIFigure,"Please choose a data column: ","AbsChanIndex","Options",opts);
         end
@@ -50,6 +60,7 @@ for FileIndex = 1:1:size(FolderContent,1)
 
         % Maybe instead do check if contains first, might be faster then find
         % index always. Just do inside the if statemnt if possible??
+%         AbsChanIndex = find(strcmp(TDMScontent.chanNames{1,CH0GroupIndex},name));
         AbsChanIndex = find(strcmp(ChannelIndices,name));
 
         % This block only runs after first file, what if others don't have the selected name?
@@ -68,38 +79,47 @@ for FileIndex = 1:1:size(FolderContent,1)
             app.RedGreen = [app.RedGreen;1];
         end
 
-        AbsDataIndex = TDMScontent.chanIndices{1,CH0GroupIndex}(AbsChanIndex);
+%         AbsDataIndex = TDMScontent.chanIndices{1,CH0GroupIndex}(AbsChanIndex);
 
-        if isempty(find(TDMScontent.data{1,AbsDataIndex}(1:5), 1)) == 1 && isempty(find(TDMScontent.data{1,AbsDataIndex}(end-4:end), 1)) == 1 
-            continue % DO NOT ADD IF COLUMN IS FULL OF ZEROS
+        if isempty(TDMScontent{1,CH0GroupIndex}{1:5,AbsChanIndex}) == 1 && isempty(TDMScontent{1,CH0GroupIndex}{end-4:end,AbsChanIndex}) == 1 
+            continue
         end
 
-        Abs = transpose(TDMScontent.data{1,AbsDataIndex});
+        Abs = TDMScontent{1,CH0GroupIndex}{:,AbsChanIndex};
+%         Abs = transpose(TDMScontent.data{1,AbsDataIndex});
 
         % Extract 
-        BkgGroupIndex = find(strcmp(TDMScontent.groupNames,'Background level'));
-        BkgChanIndex = find(strcmp(TDMScontent.chanNames{1,BkgGroupIndex},'Avg bkg level (V)'));
-        BkgDataIndex = TDMScontent.chanIndices{1,BkgGroupIndex}(BkgChanIndex);
+        idx2 = strcmp(info.ChannelList{:,2},'Background level');
+        BkgGroupIndex = info.ChannelList{idx2,1}(1);
+%         BkgGroupIndex = find(strcmp(TDMScontent.groupNames,'Background level'));
+        BkgChanIndex = find(strcmp(info.ChannelList{idx2,4},'Avg bkg level (V)'));
+%         BkgDataIndex = TDMScontent.chanIndices{1,BkgGroupIndex}(BkgChanIndex);
 
-        Bkg = TDMScontent.data{1,BkgDataIndex};
+%         Bkg = TDMScontent.data{1,BkgDataIndex};
+        Bkg = TDMScontent{1,BkgGroupIndex}{1,BkgChanIndex};
 
         LinData = addvars(LinData,Abs,'NewVariableNames',matlab.lang.makeValidName(Wavelength));
         BackgroundLvl = addvars(BackgroundLvl, Bkg, 'NewVariableNames', matlab.lang.makeValidName(Wavelength));
     end
 end
 
-TimeGroupIndex = find(strcmp(TDMScontent.groupNames,'Time'));
-TimeDataIndex = TDMScontent.chanIndices{1,TimeGroupIndex};
+% TimeGroupIndex = find(strcmp(TDMScontent.groupNames,'Time'));
+% TimeDataIndex = TDMScontent.chanIndices{1,TimeGroupIndex};
 
 %Check the first 10 index differences to get a delta double array
-delta = TDMScontent.data{1,TimeDataIndex}(2:11) - TDMScontent.data{1,TimeDataIndex}(1:10);
+% delta = TDMScontent.data{1,TimeDataIndex}(2:11) - TDMScontent.data{1,TimeDataIndex}(1:10);
+% int_delta = int16(delta);
+
+delta = diff(TDMScontent{1,1}{1:11,1});
 int_delta = int16(delta);
 
 %Check if the double array has equal integer values to distinguish time format
 if delta == int_delta
-    Time = transpose(TDMScontent.data{1,TimeDataIndex} * 4e-9);
+%     Time = transpose(TDMScontent.data{1,TimeDataIndex} * 4e-9);
+    Time = TDMScontent{1,1}{:,1} * 4e-9;
 else
-    Time = transpose(TDMScontent.data{1,TimeDataIndex});
+%     Time = transpose(TDMScontent.data{1,TimeDataIndex});
+    Time = TDMScontent{1,1}{:,1};
 end
 
 %Set up proper type variables for log and lin data

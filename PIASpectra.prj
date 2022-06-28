@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="3835704212" file="C:\Users\hvidi\Desktop\PIAS Repo\PIASpectra.prj" location="C:\Users\hvidi\Desktop\PIAS Repo" name="PIASpectra" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="2414585338" file="C:\Users\hvidi\Desktop\PIAS Repo\PIASpectra.prj" location="C:\Users\hvidi\Desktop\PIAS Repo" name="PIASpectra" target="target.mlapps" target-name="Package App">
     <param.appname>PIASpectra</param.appname>
     <param.authnamewatermark>Haris Vidimlic, Robert Godin</param.authnamewatermark>
     <param.email>vidihari@student.ubc.ca</param.email>
@@ -12,7 +12,7 @@
     </param.icons>
     <param.summary>A similar GUI to the Spectrabuilder application, with focus on viewing filtered and normalized Photoinduced Absorption Spectroscopy (PIAS)</param.summary>
     <param.description />
-    <param.screenshot>${PROJECT_ROOT}\PIASpectra_resources\Screenshot.png</param.screenshot>
+    <param.screenshot>C:\Users\hvidi\AppData\Local\Temp\tpf8d957dd_5f8d_47b4_955b_ed7c08aa24dd.png</param.screenshot>
     <param.version>2.0</param.version>
     <param.products.name>
       <item>MATLAB</item>
@@ -25,9 +25,9 @@
       <item>8</item>
     </param.products.id>
     <param.products.version>
-      <item>9.11</item>
-      <item>11.4</item>
-      <item>8.7</item>
+      <item>9.12</item>
+      <item>11.5</item>
+      <item>9.0</item>
     </param.products.version>
     <param.platforms />
     <param.output>${PROJECT_ROOT}</param.output>
@@ -41,21 +41,21 @@
       <file>${PROJECT_ROOT}\PIASpectra.mlapp</file>
     </fileset.main>
     <fileset.depfun>
-      <file>C:\Users\hvidi\Desktop\DLSmultiAverage\Chang's App\images\logo.png</file>
-      <file>${PROJECT_ROOT}\MATLAB data scripts\lin2log_TAS.m</file>
       <file>${PROJECT_ROOT}\MATLAB data scripts\PIASloadTDMSfolder.m</file>
-      <file>${PROJECT_ROOT}\Matlab TDMS reader\TDMS_readTDMSFile.m</file>
-      <file>${PROJECT_ROOT}\Matlab TDMS reader\tdmsSubfunctions\TDMS_getDataSize.m</file>
-      <file>${PROJECT_ROOT}\Matlab TDMS reader\tdmsSubfunctions\TDMS_getDataTypeName.m</file>
-      <file>${PROJECT_ROOT}\Matlab TDMS reader\tdmsSubfunctions\TDMS_getGroupChanNames.m</file>
-      <file>${PROJECT_ROOT}\Matlab TDMS reader\tdmsSubfunctions\TDMS_getPropValue.m</file>
-      <file>${PROJECT_ROOT}\Matlab TDMS reader\tdmsSubfunctions\TDMS_getTypeSeekSizes.m</file>
-      <file>${PROJECT_ROOT}\Matlab TDMS reader\tdmsSubfunctions\TDMS_handleGetDataOption.m</file>
-      <file>${PROJECT_ROOT}\Matlab TDMS reader\tdmsSubfunctions\TDMS_initData.m</file>
-      <file>${PROJECT_ROOT}\Matlab TDMS reader\tdmsSubfunctions\TDMS_preprocessFile.m</file>
-      <file>${PROJECT_ROOT}\Matlab TDMS reader\tdmsSubfunctions\TDMS_processLeadIn.m</file>
-      <file>${PROJECT_ROOT}\Matlab TDMS reader\tdmsSubfunctions\TDMS_readFileHelper_v1.m</file>
-      <file>${PROJECT_ROOT}\Matlab TDMS reader\tdmsSubfunctions\TDMS_readFileHelper_v2.m</file>
+      <file>C:\Users\hvidi\Desktop\Platform-Repo\TAMviewer\DataScripts\Converters\lin2log_TAS.m</file>
+      <file>C:\Users\hvidi\Desktop\Platform-Repo\TAMviewer\DataScripts\TDMS Reader\TDMS_readTDMSFile.m</file>
+      <file>C:\Users\hvidi\Desktop\Platform-Repo\TAMviewer\DataScripts\TDMS Reader\tdmsSubfunctions\TDMS_getDataSize.m</file>
+      <file>C:\Users\hvidi\Desktop\Platform-Repo\TAMviewer\DataScripts\TDMS Reader\tdmsSubfunctions\TDMS_getDataTypeName.m</file>
+      <file>C:\Users\hvidi\Desktop\Platform-Repo\TAMviewer\DataScripts\TDMS Reader\tdmsSubfunctions\TDMS_getGroupChanNames.m</file>
+      <file>C:\Users\hvidi\Desktop\Platform-Repo\TAMviewer\DataScripts\TDMS Reader\tdmsSubfunctions\TDMS_getPropValue.m</file>
+      <file>C:\Users\hvidi\Desktop\Platform-Repo\TAMviewer\DataScripts\TDMS Reader\tdmsSubfunctions\TDMS_getTypeSeekSizes.m</file>
+      <file>C:\Users\hvidi\Desktop\Platform-Repo\TAMviewer\DataScripts\TDMS Reader\tdmsSubfunctions\TDMS_handleGetDataOption.m</file>
+      <file>C:\Users\hvidi\Desktop\Platform-Repo\TAMviewer\DataScripts\TDMS Reader\tdmsSubfunctions\TDMS_initData.m</file>
+      <file>C:\Users\hvidi\Desktop\Platform-Repo\TAMviewer\DataScripts\TDMS Reader\tdmsSubfunctions\TDMS_preprocessFile.m</file>
+      <file>C:\Users\hvidi\Desktop\Platform-Repo\TAMviewer\DataScripts\TDMS Reader\tdmsSubfunctions\TDMS_processLeadIn.m</file>
+      <file>C:\Users\hvidi\Desktop\Platform-Repo\TAMviewer\DataScripts\TDMS Reader\tdmsSubfunctions\TDMS_readFileHelper_v1.m</file>
+      <file>C:\Users\hvidi\Desktop\Platform-Repo\TAMviewer\DataScripts\TDMS Reader\tdmsSubfunctions\TDMS_readFileHelper_v2.m</file>
+      <file>C:\Users\hvidi\Desktop\Platform-Repo\TAMviewer\Icons\Logo.png</file>
     </fileset.depfun>
     <fileset.resources />
     <fileset.package />
@@ -64,7 +64,7 @@
     </build-deliverables>
     <workflow />
     <matlab>
-      <root>C:\Program Files\MATLAB\R2021b</root>
+      <root>C:\Program Files\MATLAB\R2022a</root>
       <toolboxes>
         <toolbox name="matlabcoder" />
         <toolbox name="embeddedcoder" />

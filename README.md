@@ -116,10 +116,22 @@ Click on the "Add-Ons" dropdown menu of your MATLAB Home screen. Then click on "
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+To begin, load some PIAS (.tdms) data using the "Load TDMS" button or exported data from previous use of the GUI using the "Load CSV" button. The app will plot the optical difference or absorption percentage vs. time (s). The next and previous buttons allow you to iterate through your TDMS files and the filter switch allows you to decimate any noisy data into a clear signal. You can change the r factor of the decimation function which will in turn change the sample time; this is displayed below the "r Factor" edit field.
 
+Additionally, the kinetics data will be normalized to a certain value determined by the selected time slice on the right panel UI Table. By default, the second time slice is selected for normalization as it usually lies at the highest point of intensity in the signal. The user has the freedom to manually input values for the center times of each slice as well as their widths. Selecting a new time slice will erase the selection of the last as there can only be one for normalization. The converted spectra data from the kinetics is also shown for each time slice. The user can also delete time slices by erasing the center times or add new ones by clicking the "Add" button above the UI table. 
+
+The left panel table showcases each TDMS file selected and shown in the normalized plot. The checkbox selection will toggle those files on the plot. If the filter switch is turned on, then the filtered data takes precedence in the normalized plot and exported CSV data. The user can export the original and normalized kinetics as well as the spectra data in their own files. 
+
+Finally the right panel has metadata describing the background level of the current file, as well as the wavelength and selected channel. _If a certain channel is selected for the first .tdms file and is not present in the others, then the script follows a specified heirarchy of channels to assign: ["final A-B";"A-Test  dOD"] for processed data and ["B-Test  raw"; "A-Test  raw"] for raw data._ For ease of use, the correctly specified channel is highlighted in green whereas a backup channel is highlighted in red.
+
+<br>
+
+### Export Example
 Here is a simple example of the app used on a small dataset. The filtering is turned on and we'd like to export all the kinetics data by clicking the "Export CSV Data" button. We can view where the file was saved in the text on the left panel and can then open the CSV file to view the data.
 
-_Please note that the bottom of each CSV contains an extra row of information attributed to the BackgroundLevel data of each TDMS file. This is simply a convention to carry this data if it is loaded back into the PIAS app. If one does not intend to load it back into the app, you may delete this row or store the variables somewhere else in the CSV as to not lose it for future use._
+</br>
+
+_Please note that the bottom of each exported CSV contains an extra row of information attributed to the BackgroundLevel data of each TDMS file. This is simply a convention to carry this data if it is loaded back into the PIAS app. If one does not intend to load it back into the app, you may delete this row or store the variables somewhere else in the CSV as to not lose it for future use._
 
   <div class="row">
     <img src="PIASpectra_resources/ExportButton.png" alt="Export">
